@@ -23,8 +23,7 @@ app.use(express.json());
 app.use("/", router);
 const PORT = process.env.PORT || 5000;
 
-// Elimina o comentar esta línea para evitar conflictos con Vercel y evitar conflictos con Netlify
-// app.listen(PORT, () => console.log("Server Running"));
+app.listen(PORT, () => console.log("Server Running"));
 // console.log(process.env.EMAIL_USER);
 // console.log(process.env.EMAIL_PASS);
 
